@@ -1,0 +1,14 @@
+
+.calculator {
+    height: 320px;
+    width: 235px;
+    border-radius: 5px;
+    overflow: hidden; /*para nao estrapolar visualmente os limites da calculadora*/
+    /*background-color: tomato; /*temporário*/
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%); /*4 colunas de 25% cada*/
+    /*1fr (restante disponivel na tela) + 48px para cada uma das 5 linhas = 6 rows*/
+    grid-template-rows: 1fr 48px 48px 48px 48px 48px; 
+    
+}

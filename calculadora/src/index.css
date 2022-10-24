@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Ubuntu', monospace;
+  src: url('./fonts/Ubuntu-Regular.ttf');
+
+}
+
+* {
+  font-family: 'Ubuntu', monospace;
+}
+
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #fff;
+  background: linear-gradient(to right, #bdecb1, #3dc2b0);
+}
+
+.txt-001 {
+  font-size: 1.1em;
+}
+
+.txt-002 {
+  font-size: 0.9em;
+}
+
+.txt-003 {
+  font-size: 0.6em;
+}
