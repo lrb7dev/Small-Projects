@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "No Name",
+      "email": "non@ame.com"
+    },
+    {
+      "id": 2,
+      "name": "Terminator",
+      "email": "iwbb@sky.net"
+    },
+    {
+      "name": "James Bond",
+      "email": "007@jb.spy",
+      "id": 3
+    }
+  ]
+}
