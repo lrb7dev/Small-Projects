@@ -1,24 +1,24 @@
 import React from 'react'
-import IgImg1 from '../public/ig-img-1.jpeg'
-import IgImg2 from '../public/ig-img-2.jpeg'
-import IgImg3 from '../public/ig-img-3.jpeg'
-import IgImg4 from '../public/ig-img-4.jpeg'
-import IgImg5 from '../public/ig-img-5.jpeg'
-import IgImg6 from '../public/ig-img-6.jpeg'
+import Img1 from '../public/assets/img/img001.jpg'
+import Img2 from '../public/assets/img/img002.jpg'
+import Img3 from '../public/assets/img/img003.jpg'
+import Img4 from '../public/assets/img/img004.jpg'
+import Img5 from '../public/assets/img/img005.jpg'
+import Img6 from '../public/assets/img/img006.jpg'
 import InstagramImg from '../components/InstagramImg'
 
 const Instagram = () => {
   return (
     <div className='max-w-[1240px] mx-auto text-center py-24'>
         <p className="text-2xl font-bold" >Follow me on Instagram</p>
-        <p className="pb-4">@Captur</p>
+        <p className="pb-4">@MJ.Photosss</p>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4'>
-            <InstagramImg socialImg={IgImg1} />
-            <InstagramImg socialImg={IgImg2} />
-            <InstagramImg socialImg={IgImg3} />
-            <InstagramImg socialImg={IgImg4} />
-            <InstagramImg socialImg={IgImg5} />
-            <InstagramImg socialImg={IgImg6} />
+            <InstagramImg socialImg={Img1} />
+            <InstagramImg socialImg={Img2} />
+            <InstagramImg socialImg={Img3} />
+            <InstagramImg socialImg={Img4} />
+            <InstagramImg socialImg={Img5} />
+            <InstagramImg socialImg={Img6} />
         </div>
     </div>
   )
