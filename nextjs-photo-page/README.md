@@ -19,5 +19,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
   
   # FINAL PROJECT: After changes 
   <p align="center">
-    In Construction...
+    <img src="./public/assets/img/changes.png" width="900" title="Final Project - Before Changes">
+    
   </p>
