@@ -53,7 +53,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div className={
           nav 
-          ? `sm:hidden absolute top-0 left-0 bottom-0 right-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300` 
+          ? `sm:hidden absolute top-0 left-0 bottom-0 right-0 flex justify-center items-center w-full h-screen bg-black/95 text-center ease-in duration-300` 
             : `sm:hidden absolute top-0 left-[-100%] bottom-0 right-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300 `
         }>
           <ul>
