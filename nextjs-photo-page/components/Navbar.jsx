@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import Image from 'next/image'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -15,10 +16,11 @@ const Navbar = () => {
         const changeColor = () => {
             if (window.scrollY >= 90) {
                 setColor('#fff')
-                setTextColor('#000')
+                setTextColor('#000')        
             } else {
                 setColor('transparent')
                 setTextColor('#fff')
+                    
             }
         }
         window.addEventListener('scroll', changeColor)
@@ -29,7 +31,13 @@ const Navbar = () => {
             <div className='max-width[1240px] m-auto flex justify-between 
       items-center p-4 text-white'>
                 <Link href='/'>
-                    <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>Mary Janne</h1>
+                    {/*<h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>Mary Janne</h1>*/}
+                    <Image
+                    src='/assets/img/MJP.png'
+                    alt='/'
+                    width='76'
+                    height='76'
+                    />
                 </Link>
                 <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
                     <li className='p-4'>
