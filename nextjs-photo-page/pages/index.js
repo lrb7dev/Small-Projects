@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import Slider from '../components/Slider'
 import { SliderData } from '../components/SliderData'
 import Instagram from '../components/Instagram'
+import Footer from '../components/Footer'
 
 export default function Home() {
     return (
@@ -16,7 +17,7 @@ export default function Home() {
             <Hero heading='Mary Janne Photography' message='Photographic coverage of events and conferences' />
             <Slider slides={SliderData} />
             <Instagram />
-
+            <Footer />
         </div>
     )
 }
