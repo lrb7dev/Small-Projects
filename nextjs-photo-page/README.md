@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## NOTES:
 
   <div align="center">
-    The webpage has created using: <b><i>NextJS & TailwindCSS</b></i><hr/>
+    The webpage was created using: <b><i>NextJS & TailwindCSS</b></i><hr/>
   </div> 
 
   <strong>[EN_US]</strong> - This is my final project of a website for a course I studied, from the commits I was implementing and modifying it.<br/>
