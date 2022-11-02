@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
   
   # FINAL PROJECT: Before changes 
   <p align="center">
-    <img src="" width="350" title="Final Project - Before Changes">
+    <img src="./public/F.P.berore.png" width="900" title="Final Project - Before Changes">
   </p>
   <hr>
   
