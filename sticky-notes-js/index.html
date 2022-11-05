@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticky Notes JS</title>
     <link rel="stylesheet" href="./src/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
     <script src="./src/main.js" defer></script>
 </head>
 <body>
+    <div id="caption">
+        <h1 class="title-sticky">Sticky Notes JS</h1>
+        <img src="lamp-icon.png" class="lamp" alt="Tips" onclick="showTips()" />
+        <div id="tips">
+            <div class="txt-tips">Tips:<br/> double click mouse - to delete a selected sticky note.
+                <br/>one click - to edit.
+            </div>
+        </div>
+    </div>
     <div id="app">
         <!--<textarea class="note">Some sample text...</textarea>-->
         <button class="add-note" type="button">+</button>
     </div>
+    <footer class="footer">
+        <span>Created by Luan Rabelo - 2022</span>
+    </footer>
 </body>
 </html>

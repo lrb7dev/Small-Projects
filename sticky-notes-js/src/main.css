@@ -5,11 +5,41 @@ body {
 
 /*==================================*/
 
+
+#caption {
+    position:absolute;
+    width: 100%;
+    top: 0;
+    background: #9ae52250;
+    text-align: center;
+}
+
+.title-sticky {
+    font-family: 'Poor Story', cursive;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+.lamp {
+    width: 56px;
+    height: 46px;
+    cursor: pointer;
+}
+
+#tips {
+    display: none;
+    color: #fff;
+    padding-bottom: .5em;
+}
+
+
 #app {
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
     padding: 24px;
     gap: 24px;
+    margin-top: 200px;
 }
 
 .note {
@@ -39,4 +69,14 @@ body {
 .add-note:hover {
     background: rgba(0, 0, 0, 0.2);
     color: rgba(253, 253, 253, 0.5);
+}
+
+/*======= footer ========*/
+.footer {
+    display: flex;
+    bottom: 0;
+    justify-content: end;
+    padding-right: 10px;
+    color: #ffffff75;
+    font-size: small;
 }

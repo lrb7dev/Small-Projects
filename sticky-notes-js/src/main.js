@@ -66,3 +66,13 @@ function deleteNote(id, element) {
     saveNotes(notes)
     notesContainer.removeChild(element)
 }
+
+//show tips
+function showTips() {
+    const showTips = document.getElementById("tips")
+    showTips.style.display = "block"
+    setTimeout(() => {
+        showTips.style.display = "none"
+    }, 5000)
+       
+}
