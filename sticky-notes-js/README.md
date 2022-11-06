@@ -1,3 +1,3 @@
-### A simple Sticky Notes in JS
+### Sticky Notes in JS with localStorage
 
 <img src="app.png" alt="sticky notes js app" />
