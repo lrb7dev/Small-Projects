@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,400;0,600;0,800;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'K2D', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/*-- card --*/
+.card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 460px;
+    width: 296px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    /*overflow: hidden;*/
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+
+section .card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #fff;
+    box-shadow: 0px -1px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+section .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.box1 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(
+        106.32deg, 
+        #f3a60f 14.23%, 
+        rgba(255, 25, 25, 0) 139.97%);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.hero .hero-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+
+.hero .real-name {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+
+.card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.card i {
+    font-size: 18px;
+    margin: 0 2px;
+    color: #f3a60f;
+}
+
+section .card .about {
+    display: flex;
+    text-align: center;
+    color: #444;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.card .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card .b1 button {
+    background-color: #f3a323;
+}
+
+.card .button button {
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card .button button:hover {
+    opacity: 0.8;
+}
