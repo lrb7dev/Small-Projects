@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+/*===============================*/
+
+.container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .ring {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: -30px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 4px solid #24ecff;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container .ring::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #54D6DA;
+    box-shadow: 
+        0 0 0 4px #54D6DA33,
+        0 0 0 8px #54D6DA22,
+        0 0 0 12px #54D6DA11,
+        0 0 20px #54D6DA,
+        0 0 50px #54D6DA;
+}
+
+.container .ring:nth-child(2) {
+    animation: animate2 4s linear infinite;
+    animation-delay: -1s;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #D9C762;
+}
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.container .ring:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #D9C762;
+    box-shadow:
+        0 0 0 4px #D9C76233,
+        0 0 0 8px #D9C76222,
+        0 0 0 12px #D9C76211,
+        0 0 20px #D9C762,
+        0 0 50px #D9C762;
+}
+
+
+
+.container .ring:nth-child(3) {
+    animation: animate2 4s linear infinite;
+    animation-delay: -3s;
+    position: absolute;
+    top: -66.66px;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #D94CAA; 
+}
+.container .ring:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #D94CAA;
+    box-shadow:
+        0 0 0 4px #D94CAA33,
+        0 0 0 8px #D94CAA22,
+        0 0 0 12px #D94CAA11,
+        0 0 20px #D94CAA,
+        0 0 50px #D94CAA;
+}
+
+.container p {
+    position: absolute;
+    color: #fff;
+    font-size: 1.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    bottom: -80px;
+    letter-spacing: 0.15em;
+}
+
