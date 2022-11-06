@@ -52,6 +52,8 @@ section .card .image img {
     border: 3px solid #fff;
 }
 
+/*-- BOXES --*/
+
 .box1 {
     position: absolute;
     width: 100%;
@@ -59,9 +61,61 @@ section .card .image img {
     border-radius: 20px 20px 0 0;
     background: linear-gradient(
         106.32deg, 
-        #f3a60f 14.23%, 
+        #e4e705 14.23%, 
         rgba(255, 25, 25, 0) 139.97%);
 }
+
+.box2 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(106.32deg,
+            #db0b0b 14.23%,
+            rgba(255, 25, 25, 0) 139.97%);
+}
+
+.box3 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(106.32deg,
+            #000000 14.23%,
+            rgba(255, 25, 25, 0) 139.97%);
+}
+
+.box4 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(106.32deg,
+            #3c60ff 14.23%,
+            rgba(255, 25, 25, 0) 139.97%);
+}
+
+.box5 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(106.32deg,
+            #f50808 14.23%,
+            rgba(255, 25, 25, 0) 139.97%);
+}
+
+.box6 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(106.32deg,
+            #d4eb09 14.23%,
+            rgba(255, 25, 25, 0) 139.97%);
+}
+
+/*----------------------------*/
 
 .hero {
     display: flex;
