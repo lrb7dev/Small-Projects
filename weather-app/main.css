@@ -28,6 +28,18 @@ body {
     align-items: center;
 }
 
+.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #c7c7c72b;
+    color: #fff;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
 button {
     margin: 0.5em;
     border-radius: 50%;
@@ -45,18 +57,34 @@ button:hover {
     transition: 0.2s ease-in-out;
 }
 
-.search-bar {
-    border: none;
-    outline: none;
-    padding: 0.4em 1em;
-    border-radius: 24px;
-    background: #c7c7c72b;
-    color: #fff;
-    font-family: inherit;
-    font-size: 105%;
-    width: calc(100% - 100px);
-}
-
 h1 {
     margin: 0;
+}
+
+h1.temp {
+    margin-bottom: 0.5em;
+}
+
+.flex {
+    display: flex;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
