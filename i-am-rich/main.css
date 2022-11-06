@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'The Nautigal', cursive;
+    font-size: 60px;
+    color: #fbd4d4;
+    background-color: #9b2f2f;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    height: 800px;
+    border: 1px solid #fa8373;
+}
+
+.title { margin-top: 50px; }
+
+.diamond {
+    width: 100%;
+    height: 500px;
+}
+
+/*-- squares --*/
+
+.squares {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform: rotate(45deg);
+}
+
+span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid #800E00;
+    border-left: 75px solid transparent;
+    border-right: 75px solid #FC361C;
+}
+
+span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-top: 75px solid #ee7f7b;
+    border-bottom: 75px solid #800E00;
+    border-left: 75px solid #C92B16;
+    border-right: 75px solid #FC361C;
+}
+
+span:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 75px solid #ee7f7b;
+        border-bottom: 75px solid #800E00;
+        border-left: 75px solid #C92B16;
+        border-right: 75px solid #FC361C;
+}
+
+span:nth-child(4) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-top: 75px solid #ee7f7b;
+        border-bottom: 75px solid #800E00;
+        border-left: 75px solid #C92B16;
+        border-right: 75px solid #FC361C;
+}
+
+/*-- glow effect --*/
+.glow {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #fbd4d4;
+    box-shadow: 
+        0 0 60px 40px rgb(255, 255, 255),
+        0 0 100px 50px #d96868,
+        0 0 140px 50px rgb(255, 0, 0);
+    position: absolute;
+    top: 10%;
+    left: 70%;
+}
+
+/*-- more glow!! --*/
+.squares:hover .glow {
+    border-radius: 70%;
+    box-shadow:
+            0 0 50px 45px #fff,
+            0 0 130px 70px #d96868,
+            0 0 150px 80px rgb(255, 0, 0);
+}
