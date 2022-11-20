@@ -45,11 +45,21 @@ function App() {
     }
 
     dispatch({ type: 'ADD_NOTE', payload: newNote })
+    setNoteInput(' ') //empty
+  }
 
+  const dropNote = event => {
+    event.target.style.left = `${event.pageX - 50}px`
+    event.target.style.top = `${event.pageY - 50}px`
+  }
+
+  const dragOver = event => {
+    event.stopPropagation()
+    event.preventDefault()
   }
 
   return (
-    <div className="app">
+    <div className="app" onDragOver={dragOver} >
       <h1>Sticky Notes</h1>
       <h6 className='devName'>by Luan Rabelo</h6>
       <form onSubmit={addNote} className='note-form'>
@@ -65,8 +75,13 @@ function App() {
       {notesState
         .notes
         .map(note => (
-          <div className='note'>
-
+          <div className='note' style={{ 
+            transform: `rotate(${note.rotate}deg)`}} 
+            draggable="true"
+            onDragEnd={dropNote}
+            key={note.id}
+            >
+            
             <pre className='text'>{note.text}</pre>
           </div>
         ))
