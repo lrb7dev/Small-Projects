@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './App.scss';
 
 function App() {
+
+  const addNote = () => {}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>Sticky Notes</h1>
+      <h6 className='devName'>by Luan Rabelo</h6>
+      <form onSubmit={addNote} className='note-form'>
+        <textarea placeholder='Create a new note...'></textarea>
+        <button>ADD</button>
+      </form>
     </div>
   );
+
+  // put the version in the final
 }
 
 export default App;
