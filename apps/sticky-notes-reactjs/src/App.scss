@@ -26,3 +26,36 @@ h1, h6 {
     height: 14px;
   }
 }
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+
+  textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(239, 250, 93);
+    min-width: 100%;
+    max-width: 100%;
+    height: 100px;
+    padding: 10px;
+    outline: none;
+  }
+
+  button {
+    color: darkmagenta;
+    font-size: 16px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(247, 196, 31), rgb(214, 160, 11), rgb(247, 196, 31));
+    cursor: pointer;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    &:hover{
+      background: linear-gradient(to right, rgba(228, 75, 29, 0.95), rgba(248, 117, 65, 0.95), rgba(228, 75, 29, 0.95));
+      color: #fff;
+    }
+  }
+
+}
+
