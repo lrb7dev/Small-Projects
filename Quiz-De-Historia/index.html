@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de História Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="start-screen" class="screen">
+        <label for="playerName">Digite seu nome:</label>
+        <input type="text" id="playerName" placeholder="Seu nome">
+        <button onclick="startGame()">Iniciar Partida</button>
+        <p class="rules">Regras: 15 perguntas. Começa com 150 pontos. Pontuação mínima para não perder: 126.</p>
+    </div>
+
+    <div id="quiz-screen" class="screen hidden">
+        <!--Tela do QUIZ-->
+    </div>
+    <div id="result-screen" class="screen hidden">
+        <!--Resultado-->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
