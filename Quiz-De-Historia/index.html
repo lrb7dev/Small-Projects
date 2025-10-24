@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -9,18 +9,38 @@
 </head>
 
 <body>
-    <div id="start-screen" class="screen">
-        <label for="playerName">Digite seu nome:</label>
-        <input type="text" id="playerName" placeholder="Seu nome">
-        <button onclick="startGame()">Iniciar Partida</button>
-        <p class="rules">Regras: 15 perguntas. Começa com 150 pontos. Pontuação mínima para não perder: 126.</p>
-    </div>
 
-    <div id="quiz-screen" class="screen hidden">
-        <!--Tela do QUIZ-->
-    </div>
-    <div id="result-screen" class="screen hidden">
-        <!--Resultado-->
+    <div class="container">
+        <h1>Quiz de História</h1>
+
+        <div id="start-screen" class="screen">
+            <label for="playerName">Digite seu nome:</label>
+            <input type="text" id="playerName" placeholder="Seu nome">
+            <button onclick="startGame()">Iniciar Partida</button>
+            <p class="rules">Regras: 15 perguntas. Começa com 150 pontos. Pontuação mínima para não perder: 126.</p>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="header-quiz">
+                <p>Jogador: <span id="display-player-name"></span></p>
+                <p>Pontos: <span id="score-display">150</span></p>
+            </div>
+
+            <div id="question-area">
+                <p id="question-number"></p>
+                <h2 id="question-text">Pergunta será exibida aqui?</h2>
+                <div id="options-container" class="options-grid">
+                </div>
+            </div>
+            <p id="feedback" class="feedback-text"></p>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h2>Fim de Jogo!</h2>
+            <p id="final-message"></p>
+            <p>Pontuação Final: <span id="final-score"></span></p>
+            <button onclick="window.location.reload()">Jogar Novamente</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
