@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#resultado {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+    padding: 15px;
+    border: 1px solid #28a745;
+    background-color: #e2f9e7;
+    border-radius: 5px;
+}
